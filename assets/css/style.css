@@ -21,7 +21,23 @@
    * colors
    */
 
+
+	.brand {
+  display: flex;
+  flex-direction: column; /* stack vertically */
+  align-items: center;    /* center horizontally */
+  gap: 12px;
+}
+
+.brand img {
+  width: 80px;   /* adjust size */
+  height: 80px;
+  border-radius: 50%; /* optional: makes it circular */
+  object-fit: cover;
+}
+
   /* gradient */
+	
 
   --bg-gradient-onyx: linear-gradient(
     to bottom right, 
