@@ -1,0 +1,116 @@
+:root {
+  --bg: #f5f7fa;          /* light background */
+  --card: #ffffff;        /* white card panels */
+  --muted: #555;          /* muted text */
+  --accent: #0077cc;      /* primary blue */
+  --accent-2: #00b894;    /* secondary green */
+  --text: #222;           /* main text color */
+  --radius: 8px;
+  --max-width: 1100px;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+
+body.wireless-page {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  line-height: 1.6;
+}
+
+/* Layout container */
+.container {
+  width: calc(100% - 48px);
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 32px 0;
+}
+
+/* Header */
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  background: var(--accent);
+  color: #fff;
+  padding: 12px 0;
+}
+.header-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.brand .name {
+  margin: 0;
+  font-size: 1.2rem;
+}
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 18px;
+  font-size: 0.95rem;
+}
+.top-nav a:hover { text-decoration: underline; }
+
+/* Project Card */
+.project-detail.card {
+  background: var(--card);
+  padding: 2rem;
+  border-radius: var(--radius);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.project-detail h2 {
+  font-size: 2rem;
+  margin-top: 0;
+  color: var(--accent);
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 0.5rem;
+}
+.project-detail h3 {
+  margin-top: 1.5rem;
+  color: var(--accent-2);
+}
+.project-detail ul {
+  list-style: square;
+  margin-left: 1.5rem;
+  color: var(--muted);
+}
+.project-detail p.overview {
+  font-size: 1rem;
+  color: var(--text);
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 14px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 600;
+}
+.btn.ghost {
+  border: 2px solid var(--accent);
+  color: var(--accent);
+  background: transparent;
+  transition: all 0.3s ease;
+}
+.btn.ghost:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 28px;
+  border-top: 1px solid #ddd;
+  padding: 18px 0;
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .project-detail.card { padding: 1rem; }
+  .project-detail h2 { font-size: 1.5rem; }
+}

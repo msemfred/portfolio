@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Redundant Multi‑ISP Network Infrastructure — Semfred Martinez</title>
+
+  <!-- Link to your existing wireless.css -->
+  <link rel="stylesheet" href="../assets/css/wireless.css" />
+</head>
+<body class="wireless-page">
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <h1 class="name">Semfred Martinez</h1>
+      </div>
+      <nav class="top-nav" aria-label="Primary">
+        <a href="../index.html">Home</a>
+        <a href="../index.html#projects">Projects</a>
+        <a href="../index.html#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="project-detail card">
+      <h2>Redundant Multi‑ISP Network Infrastructure with Advanced Monitoring</h2>
+      <p class="overview">
+        Designed and implemented a resilient network infrastructure using five ISPs for redundancy, Windows Server DHCP,
+        VLAN segmentation, traffic shaping, and PRTG monitoring with automated notifications.
+      </p>
+
+      <!-- Topology Image -->
+      <h3>Topology Diagram</h3>
+      <figure class="topology">
+        <img src="../assets/images/topology.jpg" alt="Network Topology Diagram" />
+        <figcaption>Topology Image showing ISP redundancy, firewalls, and core switches.</figcaption>
+      </figure>
+
+      <!-- Project Details -->
+      <h3>Overview</h3>
+      <p>
+        I architected a robust enterprise network infrastructure to ensure high availability and optimized performance
+        across multiple offices and departments. The design leveraged five Internet Service Providers (ISPs) configured
+        for redundancy, guaranteeing continuous connectivity even during outages. By combining Windows Server DHCP,
+        VLAN segmentation, traffic shaping, and PRTG monitoring, the solution delivered secure, efficient, and transparent
+        network operations.
+      </p>
+
+      <h3>Goals</h3>
+      <ul>
+        <li>Provide uninterrupted internet connectivity through multi‑ISP redundancy.</li>
+        <li>Centralize IP address management with Windows Server DHCP.</li>
+        <li>Segment traffic by department using VLANs for security and performance.</li>
+        <li>Shape and prioritize traffic for critical applications and VIP subnets.</li>
+        <li>Monitor infrastructure health with PRTG and enable proactive notifications.</li>
+      </ul>
+
+     <h3>Artifacts</h3>
+<p>Download configuration files and documentation:</p>
+<ul class="downloads">
+  <li><a href="../assets/files/firewall1.pdf" download>Firewall 1 Configuration</a></li>
+  <li><a href="../assets/files/firewall2.pdf" download>Firewall 2 Configuration</a></li>
+  <li><a href="../assets/files/core-switch1.pdf" download>Core Switch 1 Configuration</a></li>
+  <li><a href="../assets/files/core-switch2.pdf" download>Core Switch 2 Configuration</a></li>
+  <li><a href="../assets/files/documentation.pdf" download>Documentation</a></li>
+</ul>
+
+
+
+      <p><a class="btn ghost" href="../index.html#projects">← Back to Projects</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> Semfred Martinez</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

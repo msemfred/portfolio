@@ -3,47 +3,75 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Automated Config Compliance — Semfred Martinez</title>
-  <link rel="stylesheet" href="css/style.css" />
+  <title>Enterprise Wireless Deployment — Semfred Martinez</title>
+
+  <!-- Dedicated CSS for this page -->
+  <link rel="stylesheet" href="../assets/css/wireless.css" />
+
+
 </head>
-<body>
+<body class="wireless-page">
+
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand">
         <h1 class="name">Semfred Martinez</h1>
       </div>
       <nav class="top-nav" aria-label="Primary">
-        <a href="index.html">Home</a>
-        <a href="index.html#projects">Projects</a>
-        <a href="index.html#contact">Contact</a>
-      </nav>
+  <a href="../index.html">Home</a>
+  <a href="../index.html#projects">Projects</a>
+  <a href="../index.html#contact">Contact</a>
+</nav>
+
     </div>
   </header>
 
   <main class="container">
-    <section class="project-detail">
-      <h2>Automated Config Compliance</h2>
-      <p>Overview: I implemented an automated compliance pipeline using Ansible and Python to audit, report, and remediate configuration drift across a fleet of network devices.</p>
+    <section class="project-detail card">
+      <h2>Enterprise Wireless Deployment</h2>
+      <p class="overview">
+        I architected and deployed a secure, high‑performance wireless infrastructure for a mid‑sized company.
+        This project required building the environment from scratch, integrating enterprise‑grade authentication,
+        traffic segmentation, and advanced policy enforcement to deliver reliability, scalability, and strong security.
+      </p>
 
       <h3>Goals</h3>
       <ul>
-        <li>Detect missing security hardening settings and configuration drift.</li>
-        <li>Provide safe, auditable remediation steps via Git-controlled playbooks.</li>
-        <li>Integrate with CI pipelines to run checks before changes are deployed.</li>
+        <li>Deliver seamless Wi‑Fi coverage across offices, meeting rooms, and common areas.</li>
+        <li>Implement strong authentication and granular access control using RADIUS.</li>
+        <li>Isolate guest traffic from corporate resources through VLAN segmentation and firewall rules.</li>
+        <li>Prioritize critical business applications and VIP subnets using QoS and policy routing.</li>
+        <li>Provide visibility and optimization through heatmap surveys and usage analytics.</li>
       </ul>
 
       <h3>Approach & Tools</h3>
       <ul>
-        <li>Ansible playbooks and roles for device connectivity and idempotent changes.</li>
-        <li>Python scripts for parsing device outputs and producing normalized diffs.</li>
-        <li>Git for change history; CI job triggers pre-deploy audits.</li>
+        <li><strong>Network Architecture:</strong> Multi‑AP environment with VLAN segmentation, policy routing, and centralized management.</li>
+        <li><strong>Authentication:</strong> RADIUS server integration with PPSK for user‑specific credentials and role‑based access.</li>
+        <li><strong>Traffic Management:</strong> QoS rules prioritizing VIP subnets and mission‑critical applications, plus time schedules, range limits, and session limits.</li>
+        <li><strong>Guest Access:</strong> Guest portals with bandwidth controls, VLAN isolation, and firewall enforcement.</li>
+        <li><strong>Monitoring & Analytics:</strong> Heatmap surveys to optimize AP placement, visualize coverage, and track usage trends.</li>
+        <li><strong>Tools Used:</strong> Omada Controller, RADIUS server, VLANs, firewalls, enterprise APs, centralized dashboards.</li>
+      </ul>
+
+      <h3>Challenges & Solutions</h3>
+      <ul>
+        <li><strong>Coverage Gaps:</strong> Solved with detailed heatmap surveys and AP repositioning.</li>
+        <li><strong>Guest Security:</strong> Enforced VLAN isolation, strict firewall rules, and bandwidth limits.</li>
+        <li><strong>Performance Bottlenecks:</strong> Mitigated by prioritizing VIP subnets and critical applications through QoS and policy routing.</li>
       </ul>
 
       <h3>Benefits</h3>
       <ul>
-        <li>Reduced manual drift incidents by ~80%.</li>
-        <li>Improved auditability and faster remediation windows.</li>
+        <li>Reliable Wi‑Fi coverage with minimized dead zones.</li>
+        <li>Enhanced security via RADIUS authentication, PPSK, and guest segmentation.</li>
+        <li>Improved performance by prioritizing critical applications and VIP subnets.</li>
+        <li>Actionable insights via heatmaps and analytics for ongoing optimization.</li>
+        <li>Future‑proofed design supporting scalability and additional AP deployments.</li>
       </ul>
+
+      <h3>Artifacts</h3>
+      <p>Documentation included floor plan heatmaps, AP placement diagrams, VLAN segmentation charts, and configuration snippets.</p>
 
       <p><a class="btn ghost" href="index.html">← Back to portfolio</a></p>
     </section>
@@ -55,6 +83,8 @@
     </div>
   </footer>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
